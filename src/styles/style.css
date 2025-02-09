@@ -1,0 +1,199 @@
+/* ============================= */
+/*         FONT IMPORTS          */
+/* ============================= */
+
+@font-face {
+    font-family: 'Unbounded';
+    src: url('../assets/fonts/Unbounded-VariableFont_wght.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../assets/fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ============================= */
+/*         GLOBAL STYLES         */
+/* ============================= */
+
+:root {
+    --neon-yellow: #e6ff2b;
+    --dark-teal: #0b4650;
+    --off-white: #f9f7f2;
+    --muted-gray: #898a8d;
+}
+
+html body {
+    font-family: 'Work Sans', sans-serif;
+    color: var(--dark-teal);
+    background: url('../assets/images/bg.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Unbounded', sans-serif;
+}
+
+/* ============================= */
+/*       EXPENSE FORM STYLES     */
+/* ============================= */
+
+.expense-form {
+    background: var(--dark-teal);
+    color: var(--off-white);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+.expense-form input {
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+/* Submit Button */
+.expense-form button {
+    background: var(--neon-yellow);
+    color: var(--dark-teal);
+    font-weight: 600;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.expense-form button:hover {
+    background: var(--muted-gray);
+    color: var(--off-white);
+}
+
+/* Form Field Focus Effect */
+.expense-form .form-control:focus, 
+.expense-form .form-select:focus {
+    box-shadow: 0 0 5px var(--neon-yellow);
+    border-color: var(--neon-yellow);
+    outline: none;
+}
+
+/* Input Group Styling */
+.expense-form .input-group-text {
+    background-color: var(--dark-teal);
+    color: var(--neon-yellow);
+    border: 1px solid var(--off-white);
+}
+
+/* ============================= */
+/*       EXPENSE LIST STYLES     */
+/* ============================= */
+
+.expense-list {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: var(--off-white);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Expense List Items */
+.expense-item {
+    background: var(--dark-teal);
+    color: var(--off-white);
+    border-radius: 6px;
+    padding: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.expense-item:hover {
+    background: var(--muted-gray);
+}
+
+/* Delete Button */
+.expense-item button {
+    background: var(--neon-yellow);
+    color: var(--dark-teal);
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.expense-item button:hover {
+    background: rgb(160, 5, 5);
+    color: var(--off-white);
+}
+
+/* ============================= */
+/*         TITLE STYLES          */
+/* ============================= */
+
+.title {
+    text-align: center;
+    margin: 4rem auto;
+    flex-wrap: wrap;
+}
+
+/* ============================= */
+/*    FILTER & SORTING STYLES    */
+/* ============================= */
+
+/* Filter Dropdown */
+.filters .form-select {
+    min-width: 200px;
+    background-color: var(--off-white);
+    color: var(--dark-teal);
+    border: 1px solid var(--dark-teal);
+    padding: 8px;
+    border-radius: 6px;
+    width: auto;
+    transition: all 0.3s ease;
+}
+
+.filters .form-select:focus {
+    box-shadow: 0 0 5px var(--muted-gray);
+    border-color: var(--muted-gray);
+    outline: none;
+}
+
+/* Sorting Buttons */
+.filters .sort-btn {
+    background: var(--neon-yellow); 
+    color: var(--dark-teal);
+    font-weight: 600;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.filters .sort-btn:hover {
+    background: var(--muted-gray);
+    color: var(--off-white);
+}
+
+/* Sorting Buttons Container */
+.filters .sorting-buttons {
+    display: flex;
+    gap: 10px;
+}
+
