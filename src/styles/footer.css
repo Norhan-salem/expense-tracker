@@ -1,0 +1,12 @@
+.bg-dark-teal {
+    background-color: var(--dark-teal);
+}
+.text-off-white {
+    color: var(--off-white);
+}
+.text-neon-yellow {
+    color: var(--neon-yellow);
+}
+.text-muted-gray {
+    color: var(--muted-gray);
+}
