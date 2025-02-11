@@ -197,3 +197,22 @@ h1, h2, h3, h4, h5, h6 {
     gap: 10px;
 }
 
+.error-message {
+    color: var(--neon-yellow);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.modal.fade.show {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal.fade {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+
