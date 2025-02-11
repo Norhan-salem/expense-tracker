@@ -9,7 +9,7 @@ const store = configureStore({
   reducer: {
     /**
      * Expense reducer manages expense-related state.
-     * Located in expenseSlice.js.
+     * Located in expenseSlice.jsx.
      */
     expenses: expenseReducer,
   },
